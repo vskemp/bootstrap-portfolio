@@ -1,36 +1,32 @@
 {
-    "title": "Resume",
-    "name": "startbootstrap-resume",
-    "version": "5.0.8",
+    "name": "bootsrap-portfolio",
+    "version": "1.0.0",
+    "main": "resume.js",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "dev": "nodemon resume.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "description": "bootstrap resume.",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive"
-    ],
+    "author": "veronicakemp",
+    "license": "ISC",
+    "description": "bootstrap-resume",
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
-        "bootstrap": "4.3.1",
+        "bootstrap": "^4.3.1",
+        "browser-sync": "^2.26.7",
+        "del": "^5.1.0",
+        "express": "^4.17.1",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.0",
+        "gulp-clean-css": "^4.2.0",
+        "gulp-header": "^2.0.9",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.2",
         "http": "0.0.0",
         "jquery": "^3.4.1",
-        "jquery.easing": "^1.4.1"
-    },
-    "devDependencies": {
-        "browser-sync": "2.26.7",
-        "del": "5.1.0",
-        "express": "^4.17.1",
-        "gulp": "4.0.2",
-        "gulp-autoprefixer": "7.0.0",
-        "gulp-clean-css": "4.2.0",
-        "gulp-header": "2.0.9",
-        "gulp-plumber": "^1.2.1",
-        "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.2",
-        "gulp-uglify": "3.0.2",
-        "merge-stream": "2.0.0"
+        "jquery.easing": "^1.4.1",
+        "merge-stream": "^2.0.0",
+        "nodemon": "^2.0.2"
     }
 }
