@@ -12,8 +12,13 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
+const http = require('http');
+const express = require('express');
+// const app = express();
+// const server = http.createServer(app);
+// const PORT = process.env.PORT || 3080
 
-// Load package.json for banner
+
 const pkg = require('./package.json');
 
 // BrowserSync
@@ -124,3 +129,7 @@ exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;
+
+// app.listen(PORT, () => {
+//   console.log(`Listening on ${PORT}`)
+// })
